@@ -23,3 +23,5 @@ db.authenticate()
   .catch((err) => {
     console.log("error nih", err.message);
   });
+
+export default app;
