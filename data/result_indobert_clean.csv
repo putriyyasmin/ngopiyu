@@ -1,0 +1,79 @@
+nama_cafe,jumlah_ulasan,n_positif,n_netral,n_negatif,avg_conf,pct_positif,pct_netral,pct_negatif,sentimen_score,rank_sentimen,kategori
+Kisah Manis Dago,100,98,1,1,0.994773,98.0,1.0,1.0,9.7,1,Positif
+Janji Jiwa Culture Buah Batu Bandung,85,83,1,1,0.997999,97.647059,11.764706,11.764706,9.647059,2,Positif
+Sukaluyu Coffee,100,98,0,2,0.994243,98.0,0.0,2.0,9.6,3,Positif
+Oseebo Coffee Gempol,100,95,4,1,0.985464,95.0,4.0,1.0,9.4,4,Positif
+WŌRK-UNUSUAL,30,28,2,0,0.975263,93.333333,66.666667,0.0,9.333333,5,Positif
+hi brew,100,94,5,1,0.97258,94.0,5.0,1.0,9.3,6,Positif
+Delapan Padi,100,92,8,0,0.996176,92.0,8.0,0.0,9.2,7,Positif
+Sparkle Coffee,100,94,3,3,0.996223,94.0,3.0,3.0,9.1,8,Positif
+Accio Caffe,46,42,3,1,0.97525,91.304348,65.217391,21.73913,8.913043,9,Positif
+Hanami Cafe & Sky Lounge,100,92,5,3,0.983219,92.0,5.0,3.0,8.9,10,Positif
+de.u Coffee,100,92,4,4,0.982817,92.0,4.0,4.0,8.8,11,Positif
+Caffe Bene Dago,100,90,6,4,0.966252,90.0,6.0,4.0,8.6,12,Positif
+Invalogi Coffee Kiara,100,92,2,6,0.993575,92.0,2.0,6.0,8.6,13,Positif
+Memorial Coffee Cikutra,85,77,4,4,0.975776,90.588235,47.058824,47.058824,8.588235,14,Positif
+Arturo Cafe,100,90,5,5,0.981857,90.0,5.0,5.0,8.5,15,Positif
+Layung Coffee Roastery,120,107,7,6,0.980608,89.166667,58.333333,5.0,8.416667,16,Positif
+Jabarano Coffee - Angklung 4.0 Dago,100,88,8,4,0.962163,88.0,8.0,4.0,8.4,17,Positif
+911 Coffee Buah Batu,30,27,1,2,0.9954,90.0,33.333333,66.666667,8.333333,18,Positif
+Kata Anja Coffee,60,53,4,3,0.970915,88.333333,66.666667,5.0,8.333333,19,Positif
+Adieu Café,77,69,3,5,0.980926,89.61039,38.961039,64.935065,8.311688,20,Positif
+GOFFEÉ Doughnuts & Coffee Dipatiukur,100,88,7,5,0.989955,88.0,70.0,5.0,8.3,21,Positif
+Pivot Coffee,85,75,5,5,0.978496,88.235294,58.823529,58.823529,8.235294,22,Positif
+Merawat Coffee & Eatery,82,72,5,5,0.973189,87.804878,60.97561,60.97561,8.170732,23,Positif
+Betah Space,32,26,6,0,0.965259,81.25,18.75,0.0,8.125,24,Positif
+Sans Co.,100,87,7,6,0.972712,87.0,70.0,6.0,8.1,25,Positif
+Rooftop Coffee Uber,90,79,4,7,0.979342,87.777778,44.444444,77.777778,8.0,26,Positif
+TOMORO COFFEE - Dipati Ukur,100,87,6,7,0.984711,87.0,6.0,70.0,8.0,27,Positif
+KILOGRAM SPACE,100,86,8,6,0.96598,86.0,8.0,6.0,8.0,28,Positif
+Nurona Space,99,83,12,4,0.962317,83.838384,12.121212,40.40404,7.979798,29,Netral
+Kawan Kopi Cimandiri,100,86,7,7,0.979117,86.0,70.0,70.0,7.9,30,Netral
+Mari Ngopi Bandung,100,85,9,6,0.961148,85.0,9.0,6.0,7.9,31,Netral
+Sankyōdai Coffee,36,31,2,3,0.954119,86.111111,55.555556,83.333333,7.777778,32,Netral
+Kanoko Coffee Dago,99,81,14,4,0.961407,81.818182,14.141414,40.40404,7.777778,33,Netral
+Temu Kamu Coffee & Eatery Bandung,100,86,5,9,0.966551,86.0,5.0,9.0,7.7,34,Netral
+Rooftop Coffee BTM,100,84,9,7,0.971093,84.0,9.0,70.0,7.7,35,Netral
+Kopi Nako Bandung,100,81,14,5,0.959582,81.0,14.0,5.0,7.6,36,Netral
+Garden Coffee Bandung,100,82,12,6,0.953437,82.0,12.0,6.0,7.6,37,Netral
+Dewaji Coffee Lab,99,83,8,8,0.962017,83.838384,80.808081,80.808081,7.575758,38,Netral
+Four C'S Cafe Eatery,100,83,9,8,0.982919,83.0,9.0,8.0,7.5,39,Netral
+R2O Koffie & Space,40,34,2,4,0.980888,85.0,5.0,10.0,7.5,40,Netral
+ManA Social Cafe,70,56,10,4,0.963386,80.0,14.285714,57.142857,7.428571,41,Netral
+KopiKitaku,100,83,8,9,0.956905,83.0,8.0,9.0,7.4,42,Netral
+PERSEGI Coffee,110,91,9,10,0.962786,82.727273,81.818182,90.909091,7.363636,43,Netral
+8 Cups Coffee and Etc,91,75,8,8,0.974101,82.417582,87.912088,87.912088,7.362637,44,Netral
+KOZI Coffee Dipatiukur,100,80,12,8,0.959445,80.0,12.0,8.0,7.2,45,Netral
+Maison De La Sol Coffee and Culture,100,79,14,7,0.960878,79.0,14.0,70.0,7.2,46,Netral
+Sejiwa,100,77,17,6,0.952916,77.0,17.0,6.0,7.1,47,Netral
+Pojok Tilu TIlu,30,24,3,3,0.917153,80.0,10.0,10.0,7.0,48,Netral
+CRÉMELIN,95,75,11,9,0.956141,78.947368,11.578947,94.736842,6.947368,49,Netral
+Ettan Habitat,77,62,6,9,0.967856,80.519481,77.922078,11.688312,6.883117,50,Netral
+Flash Coffee - Cikutra,44,35,4,5,0.972086,79.545455,90.909091,11.363636,6.818182,51,Netral
+Segi Coffe,72,57,7,8,0.965393,79.166667,97.222222,11.111111,6.805556,52,Netral
+Coffee Bawa Dipati Ukur,97,76,11,10,0.971089,78.350515,11.340206,10.309278,6.804124,53,Netral
+K Cafe & Coffee Shop,50,39,6,5,0.95624,78.0,12.0,10.0,6.8,54,Netral
+De.u Coffee Dago,100,78,11,11,0.953653,78.0,11.0,11.0,6.7,55,Netral
+Bento Kopi Cibiru,30,22,6,2,0.926313,73.333333,20.0,66.666667,6.666667,56,Netral
+Yumaju Coffee 3.0 Jln Buah Batu,50,38,7,5,0.931466,76.0,14.0,10.0,6.6,57,Netral
+TOMORO COFFEE - Cikutra,100,80,6,14,0.980726,80.0,6.0,14.0,6.6,58,Netral
+Eskalasi Space,100,74,18,8,0.964404,74.0,18.0,8.0,6.6,59,Netral
+Mokopi Cafè,100,75,15,10,0.951712,75.0,15.0,10.0,6.5,60,Netral
+150 Coffee and Garden,100,74,16,10,0.951855,74.0,16.0,10.0,6.4,61,Netral
+Public Space Cafe,90,71,5,14,0.976964,78.888889,55.555556,15.555556,6.333333,62,Netral
+Beda Cerita Coffee,100,74,15,11,0.966173,74.0,15.0,11.0,6.3,63,Netral
+Bagi Kopi,100,76,10,14,0.965014,76.0,10.0,14.0,6.2,64,Netral
+Bagi Kopi Kiara Artha,100,77,7,16,0.965489,77.0,70.0,16.0,6.1,65,Netral
+KOFU COFFEE,99,72,15,12,0.95193,72.727273,15.151515,12.121212,6.060606,66,Netral
+Fore Coffee - Dipatiukur,110,82,11,17,0.962672,74.545455,10.0,15.454545,5.909091,67,Negatif
+Kopi Calf To Go Buah Batu,39,28,6,5,0.961803,71.794872,15.384615,12.820513,5.897436,68,Negatif
+Monday Co Kiara Artha Park,100,75,4,21,0.978006,75.0,4.0,21.0,5.4,69,Negatif
+Bagi Kopi Ujung Berung,40,29,3,8,0.979562,72.5,7.5,20.0,5.25,70,Negatif
+Northwood Cihampelas Reserve,100,69,13,18,0.959824,69.0,13.0,18.0,5.1,71,Negatif
+Teduh Kopi,110,75,15,20,0.963835,68.181818,13.636364,18.181818,5.0,72,Negatif
+Draw Coffee,34,22,5,7,0.945732,64.705882,14.705882,20.588235,4.411765,73,Negatif
+Beri kopi Cikutra,99,63,12,24,0.984086,63.636364,12.121212,24.242424,3.939394,74,Negatif
+Relatif Kopi Cibiru,90,53,17,20,0.940492,58.888889,18.888889,22.222222,3.666667,75,Negatif
+KinoKimi Backyard,100,57,17,26,0.943811,57.0,17.0,26.0,3.1,76,Negatif
+Bento Kopi Cikutra,100,53,17,30,0.965841,53.0,17.0,30.0,2.3,77,Negatif
+ARAH Coffee Pasundan,100,53,17,30,0.954395,53.0,17.0,30.0,2.3,78,Negatif
