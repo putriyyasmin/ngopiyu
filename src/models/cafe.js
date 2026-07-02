@@ -48,6 +48,9 @@ Cafe.init(
     long: {
       type: DataTypes.FLOAT,
     },
+    image_url: {
+      type: DataTypes.TEXT,
+    },
     normalisasi_ulasan: {
       type: DataTypes.TEXT,
     },
