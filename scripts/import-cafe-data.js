@@ -24,7 +24,6 @@ function readCsv(filePath, separator = ",") {
 }
 
 async function main() {
-  // Cek koneksi ke Supabase
   await db.authenticate();
   console.log("Terhubung ke Supabase");
 
@@ -50,7 +49,6 @@ async function main() {
   console.log(`  Raw      : ${raw.length} baris`);
   console.log(raw[1].nama_cafe);
   console.log(sentimen[0].nama_cafe);
-  // Buat lookup map dari dataset mentah + kumpulkan semua ulasan per cafe
   const rawMap = {};
   const ulasanMap = {};
   for (const r of raw) {
@@ -79,7 +77,6 @@ async function main() {
       skip++;
       continue;
     }
-    // db upsert — insert kalau baru, update kalau sudah ada
     await Cafe.upsert({
       nama_cafe: s.nama_cafe,
       sentimen_score: parseFloat(s.sentimen_score) || 0,
@@ -99,18 +96,15 @@ async function main() {
 
   console.log(`\nCafe selesai! Berhasil: ${sukses} | Skip: ${skip}`);
 
-  // Import ulasan ke tabel terpisah (relasi ke cafe)
   console.log("\nMulai import ulasan...");
   await Ulasan.sync();
 
-  // Ambil id tiap cafe berdasarkan namanya
   const semuaCafe = await Cafe.findAll({ attributes: ["id", "nama_cafe"] });
   const idMap = {};
   for (const c of semuaCafe) {
     idMap[c.nama_cafe] = c.id;
   }
 
-  // Kosongkan dulu agar tidak dobel saat import ulang
   await Ulasan.destroy({ where: {}, truncate: true, cascade: true });
 
   const rows = [];
@@ -122,7 +116,6 @@ async function main() {
     }
   }
 
-  // Insert per batch supaya tidak berat
   const BATCH = 500;
   for (let i = 0; i < rows.length; i += BATCH) {
     await Ulasan.bulkCreate(rows.slice(i, i + BATCH));

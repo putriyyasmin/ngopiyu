@@ -1,5 +1,3 @@
-// Ubah string harga dari Google Maps jadi angka rupiah
-// Contoh: "Rp 25–50 rb" → 37500
 export function parseHarga(str) {
   if (!str) return null;
 

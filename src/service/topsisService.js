@@ -11,14 +11,12 @@ export function topsis(cafes, weights) {
     return [];
   }
 
-  // Kriteria diambil dari key bobot (bisa 4 atau 5 dengan jarak)
   const CRITERIA = Object.keys(weights);
 
   const data = cafes.map((c) =>
     typeof c.get === "function" ? c.get({ plain: true }) : c,
   );
 
-  // Simpan jarak asli (meter) untuk dikirim balik ke frontend
   const jarakMap = {};
   for (const c of data) jarakMap[c.nama_cafe] = c.jarak ?? null;
 

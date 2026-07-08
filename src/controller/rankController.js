@@ -5,7 +5,8 @@ import { getJarakOSM } from "../service/osrmService.js";
 const rankController = {
   rankCafes: async (req, res) => {
     try {
-      const { weight, userLat, userLong } = req.body;
+      const { weight, userLat, userLong, search, kategori, minRating, maxHarga } =
+        req.body;
       if (!weight || typeof weight !== "object") {
         return res
           .status(400)
@@ -33,10 +34,14 @@ const rankController = {
         });
       }
 
-      const cafes = await CafeService.getAllTopsis();
+      const cafes = await CafeService.getAllTopsis({
+        search,
+        kategori,
+        minRating,
+        maxHarga,
+      });
       const plain = cafes.map((c) => c.get({ plain: true }));
 
-      // Kalau jarak dipakai sebagai kriteria, hitung jarak OSM dari lokasi user
       if (weight.jarak !== undefined) {
         if (userLat === undefined || userLong === undefined) {
           return res.status(400).json({
