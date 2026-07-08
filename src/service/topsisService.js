@@ -1,15 +1,9 @@
-const CRITERIA = [
-  "sentimen_score",
-  "rating_cafe",
-  "harga_avg",
-  "jumlah_ulasan",
-];
-
 const CRITERIA_TYPE = {
   sentimen_score: "benefit",
   rating_cafe: "benefit",
   harga_avg: "cost",
   jumlah_ulasan: "benefit",
+  jarak: "cost",
 };
 
 export function topsis(cafes, weights) {
@@ -17,9 +11,16 @@ export function topsis(cafes, weights) {
     return [];
   }
 
+  // Kriteria diambil dari key bobot (bisa 4 atau 5 dengan jarak)
+  const CRITERIA = Object.keys(weights);
+
   const data = cafes.map((c) =>
     typeof c.get === "function" ? c.get({ plain: true }) : c,
   );
+
+  // Simpan jarak asli (meter) untuk dikirim balik ke frontend
+  const jarakMap = {};
+  for (const c of data) jarakMap[c.nama_cafe] = c.jarak ?? null;
 
   const norms = {};
   for (const key of CRITERIA) {
@@ -81,6 +82,7 @@ export function topsis(cafes, weights) {
       topsis_score: parseFloat(skor.toFixed(4)),
       d_positif: parseFloat(dPos.toFixed(4)),
       d_negatif: parseFloat(dNeg.toFixed(4)),
+      jarak: jarakMap[c.nama_cafe],
     };
   });
 
